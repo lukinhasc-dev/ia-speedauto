@@ -12,13 +12,24 @@ ESTOQUE_INICIAL = [
     {"modelo": "Chevrolet Onix", "ano": 2024, "preco": 95000, "categoria": "Hatch", "disponivel": True},
     {"modelo": "Hyundai HB20", "ano": 2023, "preco": 92000, "categoria": "Hatch", "disponivel": True},
     {"modelo": "Jeep Compass", "ano": 2023, "preco": 175000, "categoria": "SUV", "disponivel": True},
-    {"modelo": "Nissan Kicks", "ano": 2023, "preco": 130000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Nissan Kicks", "ano": 2023, "preco": 130000, "categoria": "SUV", "disponivel": False},
     {"modelo": "Fiat Toro", "ano": 2023, "preco": 160000, "categoria": "Pickup", "disponivel": True},
     {"modelo": "Renault Kwid", "ano": 2022, "preco": 72000, "categoria": "Hatch", "disponivel": True},
     {"modelo": "BMW X1", "ano": 2023, "preco": 280000, "categoria": "SUV", "disponivel": True},
     {"modelo": "Tesla Model 3", "ano": 2024, "preco": 350000, "categoria": "Elétrico", "disponivel": True},
     {"modelo": "Peugeot 208", "ano": 2023, "preco": 99000, "categoria": "Hatch", "disponivel": True},
     {"modelo": "Honda HR-V", "ano": 2024, "preco": 160000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Toyota Rav4", "ano": 2002, "preco": 20000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Audi A3", "ano": 2023, "preco": 230000, "categoria": "Sedan", "disponivel": True},
+    {"modelo": "Mercedes-Benz GLA", "ano": 2023, "preco": 300000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Chevrolet Bolt EV", "ano": 2024, "preco": 180000, "categoria": "Elétrico", "disponivel": True},
+    {"modelo": "Volkswagen ID.4", "ano": 2024, "preco": 220000, "categoria": "Elétrico", "disponivel": True},
+    {"modelo": "Ford Mustang Mach-E", "ano": 2024, "preco": 320000, "categoria": "Elétrico", "disponivel": True},
+    {"modelo": "Kia Seltos", "ano": 2023, "preco": 150000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Mazda CX-5", "ano": 2023, "preco": 180000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Subaru Forester", "ano": 2023, "preco": 190000, "categoria": "SUV", "disponivel": True},
+    {"modelo": "Volvo XC40", "ano": 2023, "preco": 270000, "categoria": "SUV", "disponivel": False},
+    {"modelo": "Jaguar I-PACE", "ano": 2024, "preco": 400000, "categoria": "Elétrico", "disponivel": True},
 ]
 
 estoque = {c["modelo"]: c for c in ESTOQUE_INICIAL}
@@ -113,7 +124,7 @@ def processar_comando(pergunta):
     return "Desculpe, não entendi. Digite 'ajuda' para ver os comandos."
 
 def main():
-    print("=== Chatbot de Concessionaria ===")
+    print("=== Chatbot SpeedAuto ===")
     senha = input("Digite a senha do gerente: ")
     if senha != SENHA_DONO:
         print("Senha incorreta. Acesso negado.")
